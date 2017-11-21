@@ -1,0 +1,10 @@
+apiVersion: nutc.worker.com/v1beta1
+kind: Worker
+metadata:
+  name: bk-worker
+spec:
+  name: bk
+  assigner: "Teacher Chen"
+  tasks:
+    - "Drinking ..."
+  workDay: 1

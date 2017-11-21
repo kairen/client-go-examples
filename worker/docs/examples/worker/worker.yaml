@@ -1,0 +1,7 @@
+note: Worker Example
+sample: |
+  apiVersion: nutc.worker.com/v1beta1
+  kind: Worker
+  metadata:
+    name: worker-example
+  spec:
