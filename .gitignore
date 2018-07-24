@@ -1,2 +1,15 @@
 .DS_Store
 zz_*.go
+.vagrant/
+.DS_Store
+*.retry
+tmp
+tmp/*
+hosts
+*.ovpn
+.keys/
+.venv/
+out/
+vendor/
+pkg/client/listers/
+pkg/client/informers/
