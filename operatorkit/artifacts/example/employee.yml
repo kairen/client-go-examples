@@ -1,0 +1,7 @@
+apiVersion: example.io/v1alpha1
+kind: Employee
+metadata:
+  name: kairen
+spec:
+  taskName: survey
+  threads: 1

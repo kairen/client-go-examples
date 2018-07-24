@@ -1,0 +1,23 @@
+Vagrant.require_version ">= 1.7.0"
+
+def set_vbox(vb, config)
+  vb.gui = false
+  vb.memory = 2048
+  vb.cpus = 1
+end
+
+Vagrant.configure("2") do |config|
+  config.vm.provider "virtualbox"
+  config.vm.box = "bento/ubuntu-16.04"
+
+  config.vm.define "operator" do |n|
+    n.vm.hostname = "operator"
+    n.vm.network :private_network, ip: "192.16.35.10", auto_config: true
+    n.vm.provider :virtualbox do |vb, override|
+      vb.name = "#{n.vm.hostname}"
+      set_vbox(vb, override)
+    end
+  end
+  config.vm.provision :shell, path: "./hack/setup-vm.sh"
+  config.vm.synced_folder "./", "/root/go/src/github.com/kairen/simple-operator"
+end

@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-operator
+  template:
+    metadata:
+      labels:
+        app: simple-operator
+    spec:
+      tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/master
+      nodeSelector:
+        kubernetes.io/hostname: operator
+      serviceAccountName: operator
+      containers:
+      - name: operator
+        image: kairen/simple-operator:v0.1.0
+        args:
+        - serve
+        - --logtostderr=true
+        env:
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
