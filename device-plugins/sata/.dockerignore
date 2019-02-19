@@ -1,0 +1,8 @@
+*.pem
+.DS_Store
+Dockerfile
+README.md
+.codecov.yml
+.travis.yml
+out/
+artifacts/

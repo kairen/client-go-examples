@@ -1,0 +1,13 @@
+.vagrant/
+.DS_Store
+*.retry
+tmp
+tmp/*
+hosts
+*.ovpn
+.keys/
+.venv/
+out/
+vendor/
+gopath/
+*.vdi
