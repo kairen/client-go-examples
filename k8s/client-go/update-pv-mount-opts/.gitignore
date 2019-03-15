@@ -1,0 +1,17 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.out
+*.conf
+
+.DS_Store
+vendor/
+out/
+tmp/
+
+pkg/client/listers/
+pkg/client/informers/
+
