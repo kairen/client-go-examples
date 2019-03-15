@@ -1,3 +1,3 @@
 # Custom Schedulers
-This examples demonstrates how to write a custom scheduler.
+This directory has many examples of how to write custom scheduler.
 

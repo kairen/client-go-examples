@@ -1,3 +1,3 @@
 # Custom CRI Plugin
-This examples demonstrates how to write a CRI plugin that handles container runtime.
+This directory has many examples of how to write CRI plugin that handles container runtime.
 

@@ -1,3 +1,3 @@
 # Custom Device Plugins
-This examples demonstrates how to write a device plugins.
+This directory has many examples of how to write device plugins.
 

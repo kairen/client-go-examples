@@ -1,3 +1,3 @@
 # Custom CNI Plugin
-This examples demonstrates how to write a CNI plugin that handles pod network.
+This directory has many examples of how to write CNI plugin that handles pod network.
 

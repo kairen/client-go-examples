@@ -1,3 +1,3 @@
 # Custom CLI Plugins (kubectl)
-This examples demonstrates how to write a kubectl plugin.
+This directory has many examples of how to write kubectl plugins.
 
