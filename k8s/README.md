@@ -1,2 +1,0 @@
-# Kubernetes Code Examples
-This repository is a collection of examples for learning how to develop Kubernetes plugins, extensions, and controllers. I will explore tools, libraries, interfaces, etc to learn development.
